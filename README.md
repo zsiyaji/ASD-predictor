@@ -1,4 +1,4 @@
-## ASD-Predictor
+# ASD Predictor - Web App
 A web calculator which predicts early-onset adjacent segement degeneration in patients undergoing anterior cervical discectomy and fusion.
 
 ## About the Institution
@@ -6,6 +6,8 @@ Developed at Rush University Medical Center in the Department of Orthopaedic Sur
 
 ## About the Developer
 Zakariah Siyaji is a theoretical computer science and pre-medical student at the University of Illinois at Chicago with a particular intererst in machine learning development and its integration into neurological spine surgery and orthopaedic sports and spine surgery.
+
+# Angular Development
 
 ## Development server
 
