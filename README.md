@@ -1,6 +1,11 @@
-# AsdPredictor
+## ASD-Predictor
+A web calculator which predicts early-onset adjacent segement degeneration in patients undergoing anterior cervical discectomy and fusion.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.3.
+## About the Institution
+Developed at Rush University Medical Center in the Department of Orthopaedic Surgery under the guidance of Dr. Dino Samartzis and Dr. Howard An.
+
+## About the Developer
+Zakariah Siyaji is a theoretical computer science and pre-medical student at the University of Illinois at Chicago with a particular intererst in machine learning development and its integration into neurological spine surgery and orthopaedic sports and spine surgery.
 
 ## Development server
 
