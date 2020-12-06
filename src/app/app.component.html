@@ -3,68 +3,67 @@ Prediction of Adjacent Segment Degeneration in ACDF Patients -->
 
 
 <!-- Toolbar -->
-  <p>
-    <mat-toolbar color="primary" style="color: white">
-      <span>Midwest Orthopaedics at Rush</span>
-    </mat-toolbar>
-  </p>
+<p>
+  <mat-toolbar color="primary" style="color: white">
+    <span>Midwest Orthopaedics at Rush</span>
+  </mat-toolbar>
+</p>
 
 <mat-card class="login-card" style="background-color: #8e93ad">
   <mat-card>
-      <h1 style="text-align: center; color: #3f51b5">
-        Early-Onset Adjacent Segment Degeneration Calculator
-        </h1>
+    <h1 style="text-align: center; color: #3f51b5">
+      Early-Onset Adjacent Segment Degeneration Calculator
+    </h1>
   </mat-card>
 
   <!-- Maybe group sections into demographics/comorbidities, alignment, phenotypes. -->
   <!-- Then, display the predicted probability as a percentage which increases/decreases -->
 
-    <mat-vertical-stepper [linear]="isLinear" #stepper>
-      <mat-step [stepControl]="firstFormGroup">
-        <form [formGroup]="firstFormGroup">
-          <ng-template matStepLabel>Patient's SVA Measurement
-              <p style="font-size: 10px; color: gray">The Sagittal Vertical Axis is a measuremnt from the ...</p>
-          </ng-template>
-          
-          <mat-form-field>
-            <mat-label>SVA</mat-label>
-            <input matInput placeholder="example: 22.8" formControlName="firstCtrl" required>
-          </mat-form-field>
-          <div>
-            <button mat-button mat-raised-button matStepperNext>Next</button>
-          </div>
-        </form>
-      </mat-step>
-      <mat-step [stepControl]="secondFormGroup">
-        <form [formGroup]="secondFormGroup">
-          <ng-template matStepLabel>Patient's C2-C7 Lordosis Measurement</ng-template>
-          <mat-form-field>
-            <mat-label>Address</mat-label>
-            <input matInput formControlName="secondCtrl" placeholder="Ex. 1 Main St, New York, NY"
-                   required>
-          </mat-form-field>
-          <div>
-            <button mat-button mat-raised-button matStepperPrevious>Back</button>
-            <button mat-button mat-raised-button matStepperNext>Next</button>
-          </div>
-        </form>
-      </mat-step>
-      <mat-step>
-        <ng-template matStepLabel>Done</ng-template>
-        <p>You are now done.</p>
+  <mat-vertical-stepper [linear]="isLinear" #stepper>
+    <mat-step [stepControl]="firstFormGroup">
+      <form [formGroup]="firstFormGroup">
+        <ng-template matStepLabel>Patient's SVA Measurement
+          <p style="font-size: 10px; color: gray">The Sagittal Vertical Axis is a measuremnt from the ...</p>
+        </ng-template>
+
+        <mat-form-field>
+          <mat-label>SVA</mat-label>
+          <input matInput placeholder="example: 22.8" formControlName="firstCtrl" required>
+        </mat-form-field>
+        <div>
+          <button mat-button mat-raised-button matStepperNext>Next</button>
+        </div>
+      </form>
+    </mat-step>
+    <mat-step [stepControl]="secondFormGroup">
+      <form [formGroup]="secondFormGroup">
+        <ng-template matStepLabel>Patient's C2-C7 Lordosis Measurement</ng-template>
+        <mat-form-field>
+          <mat-label>Address</mat-label>
+          <input matInput formControlName="secondCtrl" placeholder="Ex. 1 Main St, New York, NY" required>
+        </mat-form-field>
         <div>
           <button mat-button mat-raised-button matStepperPrevious>Back</button>
-          <button mat-button mat-raised-button (click)="stepper.reset()">Reset</button>
+          <button mat-button mat-raised-button matStepperNext>Next</button>
         </div>
-      </mat-step>
-    </mat-vertical-stepper>
-    
-  </mat-card>  
+      </form>
+    </mat-step>
+    <mat-step>
+      <ng-template matStepLabel>Done</ng-template>
+      <p>You are now done.</p>
+      <div>
+        <button mat-button mat-raised-button matStepperPrevious>Back</button>
+        <button mat-button mat-raised-button (click)="stepper.reset()">Reset</button>
+      </div>
+    </mat-step>
+  </mat-vertical-stepper>
+
+</mat-card>
 
 
 
 <style>
-:host {
+  :host {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-size: 14px;
     color: #333;
@@ -113,5 +112,5 @@ Prediction of Adjacent Segment Degeneration in ACDF Patients -->
       visibility: hidden;
     }
   }
-</style>
 
+</style>
