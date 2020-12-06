@@ -1,5 +1,5 @@
 <h1 align = center> ASD Predictor App </h1>
-A web calculator which predicts early-onset adjacent segement degeneration in patients undergoing anterior cervical discectomy and fusion.
+A web calculator which predicts early-onset adjacent segement degeneration (ASD) in patients undergoing anterior cervical discectomy and fusion (ACDF).
 
 ## About the Institution
 Developed at Rush University Medical Center in the Department of Orthopaedic Surgery under the guidance of Dr. Dino Samartzis and Dr. Howard An.
