@@ -1,4 +1,4 @@
-# ASD Predictor - Web App
+<h1 align = center> ASD Predictor App </h1>
 A web calculator which predicts early-onset adjacent segement degeneration in patients undergoing anterior cervical discectomy and fusion.
 
 ## About the Institution
